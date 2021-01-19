@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:#121212;
+    color: #15202B;
+    font-family: "Roboto", sans-serif;
+    margin-top: auto;
+}
+
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 12px;
+    max-width: 400px;
+    border: 4px transparent solid;
+    border-radius: 15px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.output {
+    min-height: 100px;
+    padding: 20px;
+    border: 2px transparent solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    font-size: 35px;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    color:  #ffffff;
+}
+
+#button-operation {
+    background-color: #8899A6;
+    font-weight: bold;
+}
+
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 12px;
+}
+
+.btn-clear, .btn-delete {
+    grid-column: span 2;
+    cursor: pointer;
+    border: 2px transparent solid;
+    border-radius: 5px;
+    height: 50px;
+    letter-spacing: 0.1rem;
+    font-family: "Varela Round", sans-serif;
+    color: rgb(245, 239, 239);
+    font-weight: bold;
+}
+
+.btn {
+    padding: 20px;
+    border: 2px transparent solid;
+    border-radius: 5px;
+    background-color: rgb(41, 38, 38);
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    font-family: "Varela Round", sans-serif;
+    color: #ffffff;
+}
+
+.btn:hover {
+    background-color: rgb(233, 233, 227);
+    color: rgb(41, 38, 38);
+}
+  
+.btn:active {
+    background-color: #ccc;
+} /*when button is clicked*/
+  
+.btn-clear {
+      background-color: #192734;
+}
+
+.btn-clear:hover {
+    background-color: #22303c;
+}
+
+.btn-clear:active {
+    background-color: #88d;
+}
+
+.btn-delete {
+      background-color:#192734;
+}
+
+.btn-delete:hover {
+    background-color: #22303c;
+}
+
+.btn-delete:active {
+    background-color: #88d;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #192734;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+.footer-copyright {
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+    font-family: century-gothic,Arial,sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #8899A6;
+  }
