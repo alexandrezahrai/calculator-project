@@ -1,3 +1,3 @@
 # Calculator Project
 
-Live Preview: https://alexandrezahrai.github.io/calculator-project/
+Live Preview: https://alexandrezahrai.github.io/calculator-project/index.html
